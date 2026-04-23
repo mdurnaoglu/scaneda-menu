@@ -42,7 +42,7 @@ export async function loginAdmin(
     };
   }
 
-  const user = getUserByUsername(username);
+  const user = await getUserByUsername(username);
 
   if (!user) {
     return {

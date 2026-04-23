@@ -12,7 +12,7 @@ export async function getAdminScopeOrRedirect() {
     redirect("/admin/login");
   }
 
-  const adminScope = getAdminScopeByUsername(session.username);
+  const adminScope = await getAdminScopeByUsername(session.username);
 
   if (!adminScope) {
     redirect("/admin/login");
