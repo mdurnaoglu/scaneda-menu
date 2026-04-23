@@ -179,7 +179,7 @@ img {
   background:
     radial-gradient(circle at top left, rgba(65, 202, 44, 0.18), transparent 26%),
     radial-gradient(circle at 80% 20%, rgba(65, 202, 44, 0.1), transparent 22%),
-    linear-gradient(180deg, #060807 0%, #0b0f0d 46%, #f3f6f2 46%, #f5f7f4 100%);
+    linear-gradient(180deg, #060807 0%, #0b0f0d 100%);
 }
 
 .scaneda-container {
@@ -244,7 +244,8 @@ img {
 }
 
 .scaneda-hero {
-  padding: 64px 0 80px;
+  padding: 64px 0 96px;
+  scroll-margin-top: 104px;
 }
 
 .scaneda-hero-grid {
@@ -543,6 +544,13 @@ img {
   padding: 20px;
 }
 
+.scaneda-locale-card p {
+  margin: 16px 0 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
 .scaneda-locale-card-active {
   background: linear-gradient(180deg, rgba(65, 202, 44, 0.18), rgba(255, 255, 255, 0.05));
 }
@@ -564,8 +572,15 @@ img {
 }
 
 .scaneda-section {
+  position: relative;
   padding: 96px 0;
+  scroll-margin-top: 104px;
   color: #0a0f0b;
+  background: #f5f7f4;
+}
+
+#features.scaneda-section {
+  padding-top: 120px;
 }
 
 .scaneda-feature-grid,
@@ -677,6 +692,11 @@ img {
     padding: 40px 0 56px;
   }
 
+  .scaneda-hero,
+  .scaneda-section {
+    scroll-margin-top: 88px;
+  }
+
   .scaneda-hero-copy h1 {
     font-size: clamp(38px, 12vw, 58px);
   }
@@ -704,6 +724,10 @@ img {
 
   .scaneda-section {
     padding: 72px 0;
+  }
+
+  #features.scaneda-section {
+    padding-top: 88px;
   }
 
   .scaneda-feature-card,

@@ -27,33 +27,33 @@ export default function HomePage() {
       <section className="scaneda-hero" id="top">
         <div className="scaneda-container scaneda-hero-grid">
           <div className="scaneda-hero-copy">
-            <span className="scaneda-kicker">QR experience for modern restaurants</span>
-            <h1>Цифровое меню, которое выглядит премиально и работает мгновенно.</h1>
+            <span className="scaneda-kicker">QR menu for restaurants</span>
+            <h1>Не теряйте иностранных гостей из-за бумажного меню.</h1>
             <p>
-              Scaneda помогает ресторанам, кафе и отелям запускать QR-меню с
-              чистым интерфейсом, удобной локализацией и управлением контентом
-              без лишней сложности.
+              Scaneda помогает ресторанам, кафе и отелям запускать QR-меню,
+              которое открывается за секунды, показывает меню на нужном языке и
+              позволяет обновлять позиции онлайн без повторной печати.
             </p>
             <div className="scaneda-hero-actions">
               <a href="#contact" className="scaneda-button scaneda-button-primary">
-                Обсудить запуск
+                Получить демо
               </a>
               <a href="#features" className="scaneda-button scaneda-button-secondary">
-                Посмотреть преимущества
+                Посмотреть выгоды
               </a>
             </div>
             <div className="scaneda-hero-metrics">
               <div>
-                <strong>RU first</strong>
-                <span>Русский язык как основной вход для гостей</span>
+                <strong>Мультиязычность</strong>
+                <span>Не упускайте туристов: меню можно показать на RU, EN и других языках</span>
               </div>
               <div>
-                <strong>EN ready</strong>
-                <span>Английская версия для международной аудитории</span>
+                <strong>Онлайн обновление</strong>
+                <span>Меняйте цены, позиции и стоп-лист без печати новых меню</span>
               </div>
               <div>
-                <strong>Mobile native</strong>
-                <span>Акцент на быстрый и удобный мобильный опыт</span>
+                <strong>One-time payment</strong>
+                <span>Понятная разовая оплата без запутанных ежемесячных переплат</span>
               </div>
             </div>
           </div>
@@ -68,8 +68,8 @@ export default function HomePage() {
                 <div className="scaneda-phone-notch" />
                 <div className="scaneda-phone-screen">
                   <div className="scaneda-phone-topline">
-                    <span>Сканируйте. Открывайте. Заказывайте.</span>
-                    <span className="scaneda-status">Live</span>
+                    <span>Сканируйте. Открывайте. Выбирайте.</span>
+                    <span className="scaneda-status">QR Menu</span>
                   </div>
                   <div className="scaneda-phone-hero">
                     <Image
@@ -78,16 +78,16 @@ export default function HomePage() {
                       width={220}
                       height={82}
                     />
-                    <p>Современное QR-меню для заведений, которые ценят стиль и скорость.</p>
+                    <p>Надежное QR-меню для заведений, которым нужен быстрый запуск и удобное управление.</p>
                   </div>
                   <div className="scaneda-phone-cards">
                     <div className="scaneda-mini-card">
-                      <span className="scaneda-mini-label">Скорость</span>
-                      <strong>Мгновенное открытие меню</strong>
+                      <span className="scaneda-mini-label">Без печати</span>
+                      <strong>Обновляйте меню онлайн в любое время</strong>
                     </div>
                     <div className="scaneda-mini-card">
-                      <span className="scaneda-mini-label">Локализация</span>
-                      <strong>Русский и English без трения</strong>
+                      <span className="scaneda-mini-label">Для туристов</span>
+                      <strong>Показывайте меню гостям на понятном им языке</strong>
                     </div>
                   </div>
                 </div>
@@ -96,22 +96,24 @@ export default function HomePage() {
 
             <div className="scaneda-showcase-panel scaneda-showcase-panel-bottom">
               <div className="scaneda-locale-card scaneda-locale-card-active">
-                <span className="scaneda-locale-pill">RU</span>
+                <span className="scaneda-locale-pill">RU MENU</span>
                 <Image
                   src="/brand/scaneda/scaneda_russian_logo.png"
                   alt="Русская версия логотипа Scaneda"
                   width={180}
                   height={68}
                 />
+                <p>Основное меню для местных гостей с понятной структурой и быстрой навигацией.</p>
               </div>
               <div className="scaneda-locale-card scaneda-locale-card-dark">
-                <span className="scaneda-locale-pill">EN</span>
+                <span className="scaneda-locale-pill">EN MENU</span>
                 <Image
                   src="/brand/scaneda/scaneda_white_logo.png"
                   alt="English version Scaneda logo"
                   width={180}
                   height={68}
                 />
+                <p>Английская версия помогает не терять иностранных клиентов и повышать доверие к заведению.</p>
               </div>
             </div>
           </div>
@@ -122,28 +124,28 @@ export default function HomePage() {
         <div className="scaneda-container">
           <div className="scaneda-section-heading">
             <span className="scaneda-kicker">Почему Scaneda</span>
-            <h2>Лендинг строит ощущение технологичного и уверенного бренда с первого экрана.</h2>
+            <h2>QR-меню, которое экономит деньги, удерживает гостей и упрощает работу команды.</h2>
           </div>
           <div className="scaneda-feature-grid">
             <article className="scaneda-feature-card">
-              <h3>Черный navbar, зеленый акцент</h3>
+              <h3>Не теряйте иностранных клиентов</h3>
               <p>
-                Контрастная шапка с фирменным зеленым тоном логотипа создает
-                сильный бренд-сигнал и хорошо читается на любом экране.
+                Иностранные гости видят меню на знакомом языке, быстрее
+                выбирают блюда и реже уходят без заказа из-за непонимания.
               </p>
             </article>
             <article className="scaneda-feature-card">
-              <h3>Apple-like визуальный ритм</h3>
+              <h3>Обновляйте меню без печати</h3>
               <p>
-                Спокойная типографика, воздух, мягкие градиенты и точные отступы
-                дают ощущение дорогого digital-продукта.
+                Цены, описания, стоп-лист и новые позиции меняются онлайн за
+                минуты. Не нужно заново печатать меню и тратить деньги каждый раз.
               </p>
             </article>
             <article className="scaneda-feature-card">
-              <h3>Mobile responsive в приоритете</h3>
+              <h3>Надежно и выгодно</h3>
               <p>
-                Сетка, блоки и кнопки адаптированы под телефонный сценарий, где
-                пользователи чаще всего и открывают QR-меню.
+                Платформа работает быстро, выглядит аккуратно и подходит для
+                заведений, которым нужен понятный one-time payment без лишних рисков.
               </p>
             </article>
           </div>
@@ -154,23 +156,23 @@ export default function HomePage() {
         <div className="scaneda-container">
           <div className="scaneda-section-heading">
             <span className="scaneda-kicker">Как это работает</span>
-            <h2>Простой сценарий внедрения без лишней нагрузки на команду ресторана.</h2>
+            <h2>Простой запуск QR-меню без сложной настройки и без постоянных расходов.</h2>
           </div>
           <div className="scaneda-steps">
             <article>
               <span>01</span>
-              <h3>Брендируем пространство</h3>
-              <p>Логотип, цвета и локализация сразу подстраиваются под подачу заведения.</p>
+              <h3>Добавляем ваше меню</h3>
+              <p>Загружаем категории, блюда, цены и описания в аккуратную цифровую структуру.</p>
             </article>
             <article>
               <span>02</span>
-              <h3>Настраиваем меню</h3>
-              <p>Категории, позиции и описания публикуются в чистой и понятной структуре.</p>
+              <h3>Настраиваем языки</h3>
+              <p>Гости получают русскую и английскую версии, чтобы вы не теряли продажи из-за барьера языка.</p>
             </article>
             <article>
               <span>03</span>
-              <h3>Запускаем на scaneda.online</h3>
-              <p>Гости получают быстрый доступ к меню, а команда легко обновляет контент.</p>
+              <h3>Вы обновляете всё онлайн</h3>
+              <p>После запуска команда меняет меню без типографии, без ожидания и без лишних затрат.</p>
             </article>
           </div>
         </div>
@@ -181,14 +183,14 @@ export default function HomePage() {
           <div className="scaneda-cta">
             <div>
               <span className="scaneda-kicker">Готово к запуску</span>
-              <h2>Создайте аккуратный digital-first вход для гостей вместе со Scaneda.</h2>
+              <h2>Запустите надежное QR-меню с разовой оплатой и без расходов на печать.</h2>
               <p>
-                Один экран, сильная айдентика, понятная структура и адаптация под
-                мобильный пользовательский путь.
+                Scaneda подходит ресторанам, кафе и отелям, которым нужен
+                понятный цифровой инструмент: надежный, доступный и удобный для гостей.
               </p>
             </div>
             <a href="mailto:hello@scaneda.online" className="scaneda-button scaneda-button-primary">
-              hello@scaneda.online
+              Запросить демо
             </a>
           </div>
         </div>
