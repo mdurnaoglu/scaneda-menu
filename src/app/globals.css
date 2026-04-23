@@ -1,0 +1,174 @@
+@import "../styles/layouts.css";
+
+:root {
+  --font-sans: "Inter Variable", "Inter", sans-serif;
+
+  --color-bg: #f1f2f4;
+  --color-surface: rgba(255, 255, 255, 0.94);
+  --color-surface-strong: #ffffff;
+  --color-surface-muted: #f6f6f4;
+  --color-line: rgba(17, 24, 39, 0.065);
+  --color-line-strong: rgba(17, 24, 39, 0.12);
+  --color-text: #171717;
+  --color-text-muted: #5f6470;
+  --color-text-subtle: #8a909c;
+  --color-accent: #1f2937;
+
+  --shadow-soft: 0 22px 40px rgba(15, 23, 42, 0.05);
+  --shadow-card: 0 10px 24px rgba(15, 23, 42, 0.035);
+
+  --radius-page: 32px;
+  --radius-panel: 24px;
+  --radius-card: 18px;
+  --radius-pill: 999px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 20px;
+  --text-xl: 28px;
+  --text-2xl: 40px;
+
+  --leading-tight: 1.08;
+  --leading-snug: 1.2;
+  --leading-normal: 1.45;
+
+  --public-max-width: 430px;
+  --admin-max-width: 1280px;
+
+  --public-primary: var(--color-accent);
+  --public-secondary: #c8a06a;
+  --public-header-bg: var(--public-primary);
+  --public-header-text: #ffffff;
+  --public-header-subtle: rgba(255, 255, 255, 0.72);
+  --public-surface: var(--color-surface);
+  --public-surface-strong: var(--color-surface-strong);
+  --public-surface-muted: var(--color-surface-muted);
+  --public-line: var(--color-line);
+  --public-line-strong: var(--color-line-strong);
+  --public-text: var(--color-text);
+  --public-text-muted: var(--color-text-muted);
+  --public-text-subtle: var(--color-text-subtle);
+  --public-stage-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(252, 252, 251, 0.94) 100%);
+  --public-accent-soft: rgba(200, 160, 106, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: linear-gradient(180deg, #f8f8f7 0%, #eef0f2 100%);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.95), transparent 30%),
+    linear-gradient(180deg, #f8f8f7 0%, #eef0f2 100%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+input,
+select,
+textarea,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+  outline: 2px solid rgba(17, 24, 39, 0.14);
+  outline-offset: 2px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.app-root {
+  min-height: 100vh;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--color-text-subtle);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.display-title {
+  margin: 0;
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 600;
+  line-height: var(--leading-tight);
+  letter-spacing: -0.04em;
+}
+
+.section-title {
+  margin: 0;
+  font-size: clamp(24px, 4vw, 34px);
+  font-weight: 600;
+  line-height: 1.14;
+  letter-spacing: -0.035em;
+}
+
+.card-title {
+  margin: 0;
+  font-size: var(--text-lg);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.card-title strong,
+.body-text strong {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.body-text {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--text-base);
+  line-height: 1.58;
+}
+
+.caption-text {
+  margin: 0;
+  color: var(--color-text-subtle);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+}
