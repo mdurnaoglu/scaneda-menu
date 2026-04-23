@@ -112,7 +112,7 @@ export async function saveRestaurantSettings(_previousState: unknown, formData: 
     };
   }
 
-  const updatedRestaurant = updateRestaurant(restaurantId, {
+  const updatedRestaurant = await updateRestaurant(restaurantId, {
     name,
     slug,
     logo: logoResult.value ?? "",
