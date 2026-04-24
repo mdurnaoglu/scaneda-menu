@@ -236,41 +236,43 @@ img {
 }
 
 .scaneda-language-switch {
+  position: relative;
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  padding: 4px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.04);
+  overflow: hidden;
 }
 
-.scaneda-language-button {
-  min-width: 44px;
-  min-height: 40px;
-  padding: 0 12px;
+.scaneda-language-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.scaneda-language-select {
+  min-width: 88px;
+  min-height: 44px;
+  padding: 0 38px 0 16px;
   border: 0;
   border-radius: 999px;
-  background: transparent;
-  color: rgba(255, 255, 255, 0.74);
+  background:
+    linear-gradient(45deg, transparent 50%, rgba(255, 255, 255, 0.7) 50%) calc(100% - 20px) calc(50% - 2px) / 7px 7px no-repeat,
+    linear-gradient(135deg, rgba(255, 255, 255, 0.7) 50%, transparent 50%) calc(100% - 15px) calc(50% - 2px) / 7px 7px no-repeat,
+    rgba(255, 255, 255, 0.02);
+  color: #ffffff;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.08em;
+  appearance: none;
   cursor: pointer;
-  transition:
-    color 160ms ease,
-    background-color 160ms ease,
-    transform 160ms ease;
-}
-
-.scaneda-language-button:hover {
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.06);
-}
-
-.scaneda-language-button.is-active {
-  color: #041005;
-  background: var(--color-accent);
 }
 
 .scaneda-navbar-links .scaneda-navbar-cta {
@@ -729,6 +731,7 @@ img {
 
   .scaneda-language-switch {
     order: 2;
+    width: 100%;
   }
 
   .scaneda-navbar-links .scaneda-navbar-cta {
@@ -790,7 +793,7 @@ img {
   }
 
   .scaneda-language-switch,
-  .scaneda-language-button {
+  .scaneda-language-select {
     width: 100%;
   }
 

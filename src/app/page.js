@@ -3,6 +3,11 @@
 import { useState } from "react";
 import Image from "next/image";
 
+const languages = [
+  { value: "ru", label: "RU" },
+  { value: "en", label: "EN" }
+];
+
 const copy = {
   ru: {
     homeLabel: "Сканеда",
@@ -124,24 +129,20 @@ export default function HomePage() {
           <div className="scaneda-navbar-links">
             <a href="#features">{t.navFeatures}</a>
             <a href="#flow">{t.navFlow}</a>
-            <div className="scaneda-language-switch" aria-label="Language switcher" role="group">
-              <button
-                type="button"
-                className={locale === "ru" ? "scaneda-language-button is-active" : "scaneda-language-button"}
-                onClick={() => setLocale("ru")}
-                aria-pressed={locale === "ru"}
+            <label className="scaneda-language-switch" aria-label="Language switcher">
+              <span className="scaneda-language-label">Language</span>
+              <select
+                className="scaneda-language-select"
+                value={locale}
+                onChange={(event) => setLocale(event.target.value)}
               >
-                RU
-              </button>
-              <button
-                type="button"
-                className={locale === "en" ? "scaneda-language-button is-active" : "scaneda-language-button"}
-                onClick={() => setLocale("en")}
-                aria-pressed={locale === "en"}
-              >
-                EN
-              </button>
-            </div>
+                {languages.map((language) => (
+                  <option key={language.value} value={language.value}>
+                    {language.label}
+                  </option>
+                ))}
+              </select>
+            </label>
             <a href="#contact" className="scaneda-navbar-cta">
               {t.navCta}
             </a>
