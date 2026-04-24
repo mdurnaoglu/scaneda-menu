@@ -206,13 +206,14 @@ img {
 
 .scaneda-navbar-brand img {
   width: auto;
-  height: 34px;
+  height: 42px;
 }
 
 .scaneda-navbar-links {
   display: flex;
   align-items: center;
   gap: 12px;
+  flex-wrap: wrap;
 }
 
 .scaneda-navbar-links a {
@@ -232,6 +233,44 @@ img {
   color: #ffffff;
   background: rgba(255, 255, 255, 0.06);
   transform: translateY(-1px);
+}
+
+.scaneda-language-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.scaneda-language-button {
+  min-width: 44px;
+  min-height: 40px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition:
+    color 160ms ease,
+    background-color 160ms ease,
+    transform 160ms ease;
+}
+
+.scaneda-language-button:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.scaneda-language-button.is-active {
+  color: #041005;
+  background: var(--color-accent);
 }
 
 .scaneda-navbar-links .scaneda-navbar-cta {
@@ -688,6 +727,14 @@ img {
     display: none;
   }
 
+  .scaneda-language-switch {
+    order: 2;
+  }
+
+  .scaneda-navbar-links .scaneda-navbar-cta {
+    order: 3;
+  }
+
   .scaneda-hero {
     padding: 40px 0 56px;
   }
@@ -740,6 +787,15 @@ img {
   .scaneda-button,
   .scaneda-navbar-links .scaneda-navbar-cta {
     width: 100%;
+  }
+
+  .scaneda-language-switch,
+  .scaneda-language-button {
+    width: 100%;
+  }
+
+  .scaneda-navbar-brand img {
+    height: 38px;
   }
 
   .scaneda-hero-actions {
